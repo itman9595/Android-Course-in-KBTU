@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:id="@+id/relativeLayout1"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="18dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp">
+
+        <ImageView
+            android:id="@+id/profile_picture"
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            app:srcCompat="@drawable/bauka"
+            android:layout_marginBottom="36dp"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true" />
+
+        <TextView
+            android:id="@+id/labelFrom"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/textView8"
+            android:layout_alignStart="@+id/textView8"
+            android:layout_below="@+id/textView8"
+            android:layout_marginTop="9dp"
+            android:text="From:" />
+
+        <TextView
+            android:id="@+id/textView9"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/textView8"
+            android:layout_alignBottom="@+id/textView8"
+            android:layout_marginLeft="9dp"
+            android:layout_marginStart="9dp"
+            android:layout_toEndOf="@+id/textView8"
+            android:layout_toRightOf="@+id/textView8"
+            android:text="Muratbek Bauyrzhan"
+            android:textColor="@android:color/holo_blue_light" />
+
+        <TextView
+            android:id="@+id/textView8"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="9dp"
+            android:layout_marginStart="9dp"
+            android:layout_marginTop="8dp"
+            android:layout_toEndOf="@+id/profile_picture"
+            android:layout_toRightOf="@+id/profile_picture"
+            android:text="Full Name:" />
+
+        <TextView
+            android:id="@+id/location"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/labelFrom"
+            android:layout_alignBottom="@+id/labelFrom"
+            android:layout_alignLeft="@+id/textView9"
+            android:layout_alignStart="@+id/textView9"
+            android:text="Almaty, Kazakhstan"
+            android:textColor="@android:color/holo_blue_light" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:id="@+id/relativeLayout2"
+        android:layout_below="@+id/relativeLayout1">
+
+        <TextView
+            android:id="@+id/labelTelephones"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:paddingLeft="20dp"
+            android:text="Telephones" />
+
+    </RelativeLayout>
+
+</RelativeLayout>

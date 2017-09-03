@@ -1,0 +1,174 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".MainActivity"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal"
+    android:paddingLeft="16dp"
+    android:paddingRight="16dp"
+    android:weightSum="1">
+
+    <EditText
+        android:id="@+id/txtFieldResults"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp" />
+
+    <GridLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="20dp"
+        android:layout_marginLeft="40dp"
+        android:layout_marginTop="70dp"
+        android:columnCount="4"
+        android:rowCount="4">
+
+        <Button
+            android:id="@+id/bnClickNumber1"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_marginBottom="20dp"
+            android:layout_marginRight="20dp"
+            android:background="@android:color/holo_blue_light"
+            android:onClick="buttonClick"
+            android:text="1"
+            android:textSize="24sp" />
+
+        <Button
+            android:id="@+id/bnClickNumber2"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_marginRight="20dp"
+            android:background="@android:color/holo_blue_light"
+            android:onClick="buttonClick"
+            android:text="2"
+            android:textSize="24sp" />
+
+        <Button
+            android:id="@+id/bnClickNumber3"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_marginRight="20dp"
+            android:background="@android:color/holo_blue_light"
+            android:onClick="buttonClick"
+            android:text="3"
+            android:textSize="24sp" />
+
+        <Button
+            android:id="@+id/bnClickAddition"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_marginRight="20dp"
+            android:background="@android:color/holo_blue_light"
+            android:onClick="buttonClick"
+            android:text="+"
+            android:textSize="24sp" />
+
+        <Button
+            android:id="@+id/bnClickNumber4"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_marginBottom="20dp"
+            android:background="@android:color/holo_blue_light"
+            android:onClick="buttonClick"
+            android:text="4"
+            android:textSize="24sp" />
+
+        <Button
+            android:id="@+id/bnClickNumber5"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:background="@android:color/holo_blue_light"
+            android:onClick="buttonClick"
+            android:text="5"
+            android:textSize="24sp" />
+
+        <Button
+            android:id="@+id/bnClickNumber6"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:background="@android:color/holo_blue_light"
+            android:onClick="buttonClick"
+            android:text="6"
+            android:textSize="24sp" />
+
+        <Button
+            android:id="@+id/bnClickSubstract"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:background="@android:color/holo_blue_light"
+            android:onClick="buttonClick"
+            android:text="-"
+            android:textSize="24sp" />
+
+        <Button
+            android:id="@+id/bnClickNumber7"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_marginBottom="20dp"
+            android:background="@android:color/holo_blue_light"
+            android:onClick="buttonClick"
+            android:text="7"
+            android:textSize="24sp" />
+
+        <Button
+            android:id="@+id/bnClickNumber8"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:background="@android:color/holo_blue_light"
+            android:onClick="buttonClick"
+            android:text="8"
+            android:textSize="24sp" />
+
+        <Button
+            android:id="@+id/bnClickNumber9"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:background="@android:color/holo_blue_light"
+            android:onClick="buttonClick"
+            android:text="9"
+            android:textSize="24sp" />
+
+        <Button
+            android:id="@+id/bnClickMultiply"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:background="@android:color/holo_blue_light"
+            android:onClick="buttonClick"
+            android:text="*"
+            android:textSize="24sp" />
+
+        <Button
+            android:id="@+id/bnClickNumber0"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:background="@android:color/holo_blue_light"
+            android:onClick="buttonClick"
+            android:text="0"
+            android:textSize="24sp" />
+
+        <Button
+            android:id="@+id/bnClickDivision"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_column="3"
+            android:layout_row="3"
+            android:background="@android:color/holo_blue_light"
+            android:onClick="buttonClick"
+            android:text="/"
+            android:textSize="24sp" />
+
+        <Button
+            android:id="@+id/bnClickEqual"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_column="2"
+            android:layout_row="3"
+            android:background="@android:color/holo_blue_light"
+            android:onClick="buttonClick"
+            android:text="="
+            android:textSize="24sp" />
+    </GridLayout>
+
+</RelativeLayout>
