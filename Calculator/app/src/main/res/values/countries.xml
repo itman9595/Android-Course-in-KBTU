@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="countries">
+        <item>Germany</item>
+        <item>Austria</item>
+        <item>Sweden</item>
+        <item>Switzerland</item>
+        <item>Norway</item>
+        <item>Denmark</item>
+        <item>The Netherlands</item>
+        <item>The UK</item>
+        <item>France</item>
+        <item>Spain</item>
+        <item>Portugal</item>
+        <item>Italy</item>
+    </string-array>
+    <item type="id" name="tvForCountry" />
+</resources>

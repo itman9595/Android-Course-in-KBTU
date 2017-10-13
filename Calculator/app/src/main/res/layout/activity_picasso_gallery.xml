@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+        <EditText
+            android:id="@+id/picassoEditText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="20sp"
+            android:textColor="@android:color/black" />
+
+        <Spinner
+            android:id="@+id/picassoSpinner"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/picassoEditText"
+            android:layout_weight="1"
+            android:entries="@array/list" />
+
+        <com.beardedhen.androidbootstrap.BootstrapButton
+            android:layout_below="@+id/picassoEditText"
+            android:layout_alignParentRight="true"
+            android:id="@+id/picassoButton"
+            android:layout_weight="1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Cool Button" />
+
+        <com.beardedhen.androidbootstrap.BootstrapCircleThumbnail
+            android:layout_below="@+id/picassoButton"
+            android:id="@+id/bootstrapCircleThumbnail"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
+
+</RelativeLayout>

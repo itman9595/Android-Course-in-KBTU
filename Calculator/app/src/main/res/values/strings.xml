@@ -1,3 +1,14 @@
 <resources>
-    <string name="app_name">Calculator</string>
+    <string name="lab1">Calculator</string>
+    <string name="lab2">Profile App</string>
+    <string name="lab4Part1">Dictionary App Modification</string>
+    <string name="lab4Part2">Email App</string>
+    <string name="lab5">World Flags Game App</string>
+    <string name="lab6">Picasso Library</string>
+    <string-array name="list">
+        <item>Image 1</item>
+        <item>Image 2</item>
+        <item>Image 3</item>
+        <item>Image 4</item>
+    </string-array>
 </resources>

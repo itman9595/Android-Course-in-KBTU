@@ -1,30 +1,32 @@
 <?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@android:color/darker_gray"
     android:orientation="horizontal">
 
     <RelativeLayout
+        android:id="@+id/relativeLayout1"
         android:layout_width="match_parent"
         android:layout_height="150dp"
-        android:id="@+id/relativeLayout1"
-        android:layout_alignParentTop="true"
         android:layout_alignParentLeft="true"
         android:layout_alignParentStart="true"
-        android:layout_marginTop="18dp"
+        android:layout_alignParentTop="true"
         android:layout_marginLeft="16dp"
-        android:layout_marginRight="16dp">
+        android:layout_marginRight="16dp"
+        android:layout_marginTop="18dp">
 
         <ImageView
             android:id="@+id/profile_picture"
             android:layout_width="150dp"
             android:layout_height="150dp"
-            app:srcCompat="@drawable/bauka"
-            android:layout_marginBottom="36dp"
             android:layout_alignParentBottom="true"
             android:layout_alignParentLeft="true"
-            android:layout_alignParentStart="true" />
+            android:layout_alignParentStart="true"
+            android:layout_marginBottom="36dp"
+            app:srcCompat="@drawable/bauka" />
 
         <TextView
             android:id="@+id/labelFrom"
@@ -33,11 +35,11 @@
             android:layout_alignLeft="@+id/textView8"
             android:layout_alignStart="@+id/textView8"
             android:layout_below="@+id/textView8"
-            android:layout_marginTop="9dp"
-            android:text="From:" />
+            android:layout_marginTop="18dp"
+            android:text="ID" />
 
         <TextView
-            android:id="@+id/textView9"
+            android:id="@+id/fullName"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_alignBaseline="@+id/textView8"
@@ -47,7 +49,7 @@
             android:layout_toEndOf="@+id/textView8"
             android:layout_toRightOf="@+id/textView8"
             android:text="Muratbek Bauyrzhan"
-            android:textColor="@android:color/holo_blue_light" />
+            android:textColor="#01DFD7" />
 
         <TextView
             android:id="@+id/textView8"
@@ -62,22 +64,26 @@
             android:text="Full Name:" />
 
         <TextView
-            android:id="@+id/location"
+            android:id="@+id/id"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_alignBaseline="@+id/labelFrom"
             android:layout_alignBottom="@+id/labelFrom"
-            android:layout_alignLeft="@+id/textView9"
-            android:layout_alignStart="@+id/textView9"
-            android:text="Almaty, Kazakhstan"
-            android:textColor="@android:color/holo_blue_light" />
+            android:layout_alignLeft="@+id/fullName"
+            android:layout_alignStart="@+id/fullName"
+            android:text="15BD02109"
+            android:textColor="#01DFD7" />
+
     </RelativeLayout>
 
     <RelativeLayout
-        android:layout_width="match_parent"
-        android:layout_height="100dp"
         android:id="@+id/relativeLayout2"
-        android:layout_below="@+id/relativeLayout1">
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignTop="@+id/relativeLayout1"
+        android:layout_marginTop="118dp">
 
         <TextView
             android:id="@+id/labelTelephones"
@@ -85,9 +91,264 @@
             android:layout_height="wrap_content"
             android:layout_alignParentLeft="true"
             android:layout_alignParentTop="true"
+            android:background="@android:color/white"
             android:paddingLeft="20dp"
             android:text="Telephones" />
 
+        <ImageView
+            android:id="@+id/mobileImgView"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_below="@+id/labelTelephones"
+            android:layout_marginLeft="15dp"
+            android:layout_marginStart="15dp"
+            android:layout_marginTop="15dp"
+            app:srcCompat="@drawable/mobile" />
+
+        <TextView
+            android:id="@+id/mobileLbl"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@+id/mobileImgView"
+            android:layout_marginLeft="9dp"
+            android:layout_marginStart="9dp"
+            android:layout_toEndOf="@+id/mobileImgView"
+            android:layout_toRightOf="@+id/mobileImgView"
+            android:text="Mobile"
+            android:textSize="12sp" />
+
+        <LinearLayout
+            android:id="@+id/linearLayout1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/round_rect_shape_label"
+            android:orientation="horizontal"
+            android:padding="5dp"
+            android:layout_alignTop="@+id/mobileLbl"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginRight="80dp"
+            android:layout_marginEnd="80dp">
+
+            <TextView
+                android:id="@+id/mobilePhone"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+                android:layout_weight="1"
+                android:text="+77479899177" />
+        </LinearLayout>
+
     </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/relativeLayout3"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/relativeLayout2">
+
+        <TextView
+            android:id="@+id/labelTelephones"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:background="@android:color/white"
+            android:paddingLeft="20dp"
+            android:text="Emails" />
+
+        <ImageView
+            android:id="@+id/Email1ImgView"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_below="@+id/labelTelephones"
+            android:layout_marginLeft="15dp"
+            android:layout_marginStart="15dp"
+            android:layout_marginTop="15dp"
+            app:srcCompat="@drawable/email" />
+
+        <TextView
+            android:id="@+id/email1Lbl"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Email 1"
+            android:textSize="12sp"
+            android:layout_marginLeft="9dp"
+            android:layout_marginStart="9dp"
+            android:layout_alignTop="@+id/Email1ImgView"
+            android:layout_toEndOf="@+id/Email1ImgView"
+            android:layout_toRightOf="@+id/Email1ImgView" />
+
+        <LinearLayout
+            android:id="@+id/linearLayout2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignTop="@+id/Email1ImgView"
+            android:layout_marginEnd="24dp"
+            android:layout_marginRight="24dp"
+            android:background="@drawable/round_rect_shape_label"
+            android:orientation="horizontal"
+            android:padding="5dp">>
+
+            <TextView
+                android:id="@+id/email1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+                android:layout_weight="1"
+                android:text="itman9595@yahoo.com" />
+
+        </LinearLayout>
+
+        <ImageView
+            android:id="@+id/Email2ImgView"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_below="@+id/Email1ImgView"
+            android:layout_marginLeft="15dp"
+            android:layout_marginStart="15dp"
+            android:layout_marginTop="15dp"
+            app:srcCompat="@drawable/email" />
+
+        <TextView
+            android:id="@+id/email2Lbl"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Email 2"
+            android:textSize="12sp"
+            android:layout_marginLeft="9dp"
+            android:layout_marginStart="9dp"
+            android:layout_alignTop="@+id/Email2ImgView"
+            android:layout_toEndOf="@+id/Email2ImgView"
+            android:layout_toRightOf="@+id/EmailImgView" />
+
+        <LinearLayout
+            android:id="@+id/linearLayout3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignTop="@+id/Email2ImgView"
+            android:layout_marginEnd="24dp"
+            android:layout_marginRight="24dp"
+            android:background="@drawable/round_rect_shape_label"
+            android:orientation="horizontal"
+            android:padding="5dp">
+
+            <TextView
+                android:id="@+id/email2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+                android:layout_weight="1"
+                android:text="muratbekbauyrzhan95@gmail.com" />
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/relativeLayout4"
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignTop="@+id/relativeLayout3"
+        android:layout_marginTop="118dp">
+
+        <TextView
+            android:id="@+id/labelAdresses"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:background="@android:color/white"
+            android:paddingLeft="20dp"
+            android:text="Adresses" />
+
+        <LinearLayout
+            android:id="@+id/linearLayout4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_below="@+id/labelAdresses"
+            android:layout_marginLeft="40dp"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/round_rect_shape_label"
+            android:orientation="horizontal"
+            android:padding="5dp">
+
+            <TextView
+                android:id="@+id/adress"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+                android:layout_weight="1"
+                android:text="Almaty, Kazakhstan, mcr district Kayrat, Bereke-1" />
+
+            <ImageView
+                android:id="@+id/geoLocation"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+
+                android:layout_alignTop="@+id/adress"
+                android:layout_marginLeft="5dp"
+                android:layout_toEndOf="@+id/adress"
+                android:layout_toRightOf="@+id/adress"
+                app:srcCompat="@drawable/geolocation" />
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+    <RadioGroup
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/relativeLayout4"
+        android:orientation="horizontal"
+        android:layout_marginTop="31dp"
+        android:layout_marginLeft="40dp">
+
+        <RadioButton
+            android:id="@+id/radioButton1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:checked="true"
+            android:onClick="radioClick"
+            android:text="RadioButton" />
+
+        <RadioButton
+            android:id="@+id/radioButton2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:onClick="radioClick"
+            android:text="RadioButton" />
+
+        <RadioButton
+            android:id="@+id/radioButton3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:onClick="radioClick"
+            android:text="RadioButton" />
+    </RadioGroup>
 
 </RelativeLayout>
