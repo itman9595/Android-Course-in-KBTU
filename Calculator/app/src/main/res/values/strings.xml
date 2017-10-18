@@ -5,10 +5,23 @@
     <string name="lab4Part2">Email App</string>
     <string name="lab5">World Flags Game App</string>
     <string name="lab6">Picasso Library</string>
+    <string name="lab8">Thecat API</string>
+    <string name="lab9">Thecat API</string>
     <string-array name="list">
         <item>Image 1</item>
         <item>Image 2</item>
         <item>Image 3</item>
         <item>Image 4</item>
     </string-array>
+    <string-array name="catList">
+        <item>cat 1</item>
+        <item>cat 2</item>
+        <item>cat 3</item>
+        <item>cat 4</item>
+    </string-array>
+    <string name="title_activity_thecat__api">thecat_API</string>
+    <string name="title_activity_thecat_api">thecat_api</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
 </resources>

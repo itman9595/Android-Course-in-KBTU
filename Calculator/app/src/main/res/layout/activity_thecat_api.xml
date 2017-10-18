@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal">
+
+    <fragment
+        android:name="com.example.bauyrzhan.calculator.catListFragment"
+        android:id="@+id/catListFragment"
+        tools:layout="@layout/fragment_cat_list"
+        android:layout_height="match_parent"
+        android:layout_width="167dp"
+        android:layout_weight="0.28"
+        />
+    <fragment
+        android:name="com.example.bauyrzhan.calculator.catDetailsFragment"
+        android:id="@+id/catDetailsFragment"
+        tools:layout="@layout/fragment_cat_details"
+        android:layout_weight="2"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        />
+</LinearLayout>

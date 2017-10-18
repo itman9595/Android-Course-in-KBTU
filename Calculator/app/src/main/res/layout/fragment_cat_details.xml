@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.bauyrzhan.calculator.catDetailsFragment"
+    android:background="@color/bootstrap_gray_lighter">
+    <RelativeLayout  xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="16dp"
+        >
+        <ImageView
+        android:id="@+id/catImg"
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:layout_marginTop="16dp"
+        />
+        <TextView
+            android:layout_below="@id/catImg"
+            android:id="@+id/catID"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="ID: "
+            />
+        <TextView
+            android:layout_below="@id/catID"
+            android:id="@+id/catURL"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="URL: "
+            />
+        <TextView
+            android:layout_below="@id/catURL"
+            android:id="@+id/catSource"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Source: "
+            />
+    </RelativeLayout>
+</FrameLayout>
