@@ -6,7 +6,7 @@
     <string name="lab5">World Flags Game App</string>
     <string name="lab6">Picasso Library</string>
     <string name="lab8">Thecat API</string>
-    <string name="lab9">Thecat API</string>
+    <string name="lab9">Database</string>
     <string-array name="list">
         <item>Image 1</item>
         <item>Image 2</item>
@@ -24,4 +24,7 @@
 
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="title_activity_local_database">LocalDatabase</string>
+    <string name="title_activity_chat_firebase">ChatFirebase</string>
+    <string name="title_activity_chess_board">ChessBoard</string>
 </resources>

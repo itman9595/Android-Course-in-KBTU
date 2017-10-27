@@ -7,10 +7,12 @@
     <application
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
-        android:label="@string/lab8"
+        android:label="@string/lab9"
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
-        android:theme="@style/AppTheme">
+        android:theme="@style/AppTheme.NoActionBar">
+
+        <activity android:name=".ChessBoard" />
         <activity android:name=".EmailListActivity" />
         <activity android:name=".StartMenuActivity" />
         <activity android:name=".Dictionary" />
@@ -19,10 +21,15 @@
         <activity android:name=".WorldFlagsGameActivity" />
         <activity android:name=".EmailDetailsActivity" />
         <activity android:name=".PicassoGallery" />
-        <activity android:name=".thecat_api"
-            android:screenOrientation="sensorLandscape">
+        <activity android:name=".LocalDatabase" />
+        <activity
+            android:name=".thecat_api"
+            android:screenOrientation="sensorLandscape" />
+        <!--.LocalDatabase-->
+        <activity android:name=".ChatFirebase">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
+
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
