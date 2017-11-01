@@ -1,0 +1,26 @@
+<resources>
+    <string name="lab1">Calculator</string>
+    <string name="lab2">Profile App</string>
+    <string name="lab4Part1">Dictionary App Modification</string>
+    <string name="lab4Part2">Email App</string>
+    <string name="lab5">World Flags Game App</string>
+    <string name="lab6">Picasso Library</string>
+    <string name="lab8">Thecat API</string>
+    <string name="lab9">Database</string>
+    <string name="lab11Part1">ProfileLocalization</string>
+    <string-array name="list">
+        <item>Image 1</item>
+        <item>Image 2</item>
+        <item>Image 3</item>
+        <item>Image 4</item>
+    </string-array>
+    <string-array name="catList">
+        <item>cat 1</item>
+        <item>cat 2</item>
+        <item>cat 3</item>
+        <item>cat 4</item>
+    </string-array>
+    <string name="localizedPersonFullName">Александр Сергеевич Пушкин</string>
+    <string name="localizedBirthDate">26/05/1799</string>
+    <string name="localizedLifeStory">Происхождение Александра Сергеевича Пушкина идёт от разветвлённого нетитулованного дворянского рода Пушкиных, восходившего по генеалогической легенде к «мужу честну» Ратше[10][~ 2]. Пушкин неоднократно писал о своей родословной в стихах и прозе; он видел в своих предках образец истинной «аристократии», древнего рода, честно служившего отечеству, но не снискавшего благосклонности правителей и «гонимого». Не раз он обращался (в том числе в художественной форме) и к образу своего прадеда по матери — африканца Абрама Петровича Ганнибала, ставшего слугой и воспитанником Петра I, а потом военным инженером и генералом.</string>
+</resources>

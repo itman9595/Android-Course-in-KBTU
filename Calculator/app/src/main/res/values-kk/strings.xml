@@ -20,7 +20,7 @@
         <item>cat 3</item>
         <item>cat 4</item>
     </string-array>
-    <string name="localizedPersonFullName">John Ernst Steinbeck</string>
-    <string name="localizedBirthDate">27/02/1902</string>
-    <string name="localizedLifeStory">Steinbeck was born on February 27, 1902, in Salinas, California. He was of German, English, and Irish descent. Johann Adolf Großsteinbeck (1828–1913), Steinbeck\'s paternal grandfather, shortened the family name to Steinbeck when he immigrated to the United States. The family farm in Heiligenhaus, Mettmann, North Rhine-Westphalia, Germany, is still named \"Großsteinbeck.\"</string>
+    <string name="localizedPersonFullName">Абай (Ибраһим) Құнанбайұлы</string>
+    <string name="localizedBirthDate">10/08/1845</string>
+    <string name="localizedLifeStory">Абай 10 тамыз 1845 ж. қазіргі Семей облысының Шыңғыс тауларында Қарқаралының аға сұлтаны Құнанбайдың төрт әйелінің бірі, екінші әйелі Ұлжаннан туған.</string>
 </resources>

@@ -7,11 +7,10 @@
     <application
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
-        android:label="@string/lab9"
+        android:label="@string/lab11Part1"
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme.NoActionBar">
-
         <activity android:name=".ChessBoard" />
         <activity android:name=".EmailListActivity" />
         <activity android:name=".StartMenuActivity" />
@@ -25,8 +24,10 @@
         <activity
             android:name=".thecat_api"
             android:screenOrientation="sensorLandscape" />
-        <!--.LocalDatabase-->
-        <activity android:name=".ChatFirebase">
+        <!-- .LocalDatabase -->
+        <activity android:name=".ChatFirebase" />
+        <activity android:name=".UmbrellaDrops" />
+        <activity android:name=".ProfileLocalization">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
