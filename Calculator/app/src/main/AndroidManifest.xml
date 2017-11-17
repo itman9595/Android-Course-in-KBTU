@@ -3,11 +3,15 @@
     package="com.example.bauyrzhan.calculator">
 
     <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.SEND_SMS" />
+    <uses-permission android:name="android.permission.RECEIVE_SMS" />
+    <uses-permission android:name="android.permission.READ_CALENDAR" />
+    <uses-permission android:name="android.permission.WRITE_CALENDAR" />
 
     <application
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
-        android:label="@string/lab11Part1"
+        android:label="@string/lab11Part2"
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme.NoActionBar">
@@ -24,16 +28,33 @@
         <activity
             android:name=".thecat_api"
             android:screenOrientation="sensorLandscape" />
-        <!-- .LocalDatabase -->
         <activity android:name=".ChatFirebase" />
         <activity android:name=".UmbrellaDrops" />
-        <activity android:name=".ProfileLocalization">
+        <activity android:name=".ProfileLocalization" />
+        <activity android:name=".SMS_Send" />
+
+        <receiver
+            android:name=".SMS_Receive"
+            android:exported="true">
+            <intent-filter android:priority="999">
+                <action android:name="android.provider.Telephony.SMS_RECEIVED" />
+            </intent-filter>
+        </receiver>
+
+        <activity
+            android:name=".PillTracker"
+            android:screenOrientation="sensorLandscape">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+
+        <service
+            android:name=".PrescriptionService"
+            android:enabled="true"
+            android:exported="false"></service>
     </application>
 
 </manifest>

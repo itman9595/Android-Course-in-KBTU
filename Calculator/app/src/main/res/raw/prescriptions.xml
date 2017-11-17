@@ -1,0 +1,21 @@
+<?xml version="1.0"?>
+<pills>
+    <pill>
+        <name>Crocin tab</name>
+        <quantity>3 unit</quantity>
+        <dose>0.5 unit
+            After Food
+            After meals</dose>
+        <frequency>BiD (twice a day)</frequency>
+        <duration>3 days</duration>
+    </pill>
+    <pill>
+        <name>Dispirin tab</name>
+        <quantity>5 unit</quantity>
+        <dose>1.0 unit
+            After Food
+            Take tablet with water</dose>
+        <frequency>OD (ine in a day)</frequency>
+        <duration>5 days</duration>
+    </pill>
+</pills>

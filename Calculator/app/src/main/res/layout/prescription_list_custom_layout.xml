@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <TextView
+        android:id="@+id/pillName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Some name" />
+    <TextView
+        android:id="@+id/pillQuantityLbl"
+        android:layout_alignTop="@id/pillName"
+        android:layout_toRightOf="@id/pillName"
+        android:layout_toEndOf="@id/pillName"
+        android:layout_marginLeft="30dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Quantity" />
+    <TextView
+        android:id="@+id/pillQuantity"
+        android:layout_alignTop="@id/pillName"
+        android:layout_toRightOf="@id/pillQuantityLbl"
+        android:layout_toEndOf="@id/pillQuantityLbl"
+        android:layout_marginLeft="10dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Some units" />
+    <TextView
+        android:id="@+id/pillDoseLbl"
+        android:layout_below="@id/pillName"
+        android:layout_alignLeft="@id/pillName"
+        android:layout_marginTop="10dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Dose" />
+    <TextView
+        android:id="@+id/pillDose"
+        android:layout_width="120dp"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@id/pillDoseLbl"
+        android:layout_toRightOf="@id/pillDoseLbl"
+        android:layout_toEndOf="@id/pillDoseLbl"
+        android:layout_marginLeft="15dp"
+        android:text="Some dose" />
+    <TextView
+        android:id="@+id/pillFrequencyLbl"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@id/pillDoseLbl"
+        android:layout_toRightOf="@id/pillDose"
+        android:layout_toEndOf="@id/pillDose"
+        android:layout_marginLeft="30dp"
+        android:text="Frequency" />
+    <TextView
+        android:id="@+id/pillFrequency"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@id/pillDoseLbl"
+        android:layout_toRightOf="@id/pillFrequencyLbl"
+        android:layout_toEndOf="@id/pillFrequencyLbl"
+        android:layout_marginLeft="10dp"
+        android:text="Some frequency" />
+    <TextView
+        android:id="@+id/pillDurationLbl"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/pillFrequencyLbl"
+        android:layout_alignLeft="@id/pillFrequencyLbl"
+        android:layout_marginTop="10dp"
+        android:text="Duration" />
+    <TextView
+        android:id="@+id/pillDuration"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@id/pillDurationLbl"
+        android:layout_toRightOf="@id/pillDurationLbl"
+        android:layout_toEndOf="@id/pillDurationLbl"
+        android:layout_marginLeft="10dp"
+        android:text="Some duration" />
+</RelativeLayout>

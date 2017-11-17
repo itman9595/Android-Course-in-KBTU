@@ -8,6 +8,7 @@
     <string name="lab8">Thecat API</string>
     <string name="lab9">Database</string>
     <string name="lab11Part1">ProfileLocalization</string>
+    <string name="lab11Part2">Pencil App</string>
     <string-array name="list">
         <item>Image 1</item>
         <item>Image 2</item>
@@ -23,4 +24,9 @@
     <string name="localizedPersonFullName">John Ernst Steinbeck</string>
     <string name="localizedBirthDate">27/02/1902</string>
     <string name="localizedLifeStory">Steinbeck was born on February 27, 1902, in Salinas, California. He was of German, English, and Irish descent. Johann Adolf Großsteinbeck (1828–1913), Steinbeck\'s paternal grandfather, shortened the family name to Steinbeck when he immigrated to the United States. The family farm in Heiligenhaus, Mettmann, North Rhine-Westphalia, Germany, is still named \"Großsteinbeck.\"</string>
+    <string name="title_activity_pencil">Pencil</string>
+    <string name="title_activity_sms__receive">SMS_Receive</string>
+    <string name="title_activity_sms__send">SMS_Send</string>
+    <string name="title_activity_google_map">GoogleMap</string>
+    <string name="title_activity_pill_tracker">PillTracker</string>
 </resources>
